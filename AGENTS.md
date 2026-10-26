@@ -4,7 +4,7 @@ Instructions for coding agents working in this repository.
 
 ## Purpose
 
-`option-pricer` is a C++20 library for pricing financial options (Black–Scholes,
+`option_pricer` is a C++20 library for pricing financial options (Black–Scholes,
 Monte Carlo, binomial tree) with a command-line application, unit tests,
 benchmarks and Doxygen documentation.
 

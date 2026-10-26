@@ -1,12 +1,12 @@
 # Option Pricer
 
-[![CI](https://github.com/g30613740/option-pricer/actions/workflows/ci.yml/badge.svg)](https://github.com/g30613740/option-pricer/actions/workflows/ci.yml)
+[![CI](https://github.com/g30613740/option_pricer/actions/workflows/ci.yml/badge.svg)](https://github.com/g30613740/option_pricer/actions/workflows/ci.yml)
 
 A C++ library for pricing financial options. Planned models: Black–Scholes (analytic),
 Monte Carlo and binomial tree. The current version contains a placeholder function
 that is used to set up the build, tests, benchmarks and documentation.
 
-**Documentation:** https://g30613740.github.io/option-pricer/
+**Documentation:** https://g30613740.github.io/option_pricer/
 
 ## Project structure
 
