@@ -7,5 +7,5 @@ set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "" FORCE)
 set(BENCHMARK_ENABLE_INSTALL OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(benchmark)
 
-add_executable(benchmarks bench_math.cpp bench_payoff.cpp)
+add_executable(benchmarks bench_math.cpp bench_payoff.cpp bench_black_scholes.cpp)
 target_link_libraries(benchmarks PRIVATE option_pricer benchmark::benchmark_main)

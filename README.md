@@ -3,8 +3,14 @@
 [![CI](https://github.com/g30613740/option_pricer/actions/workflows/ci.yml/badge.svg)](https://github.com/g30613740/option_pricer/actions/workflows/ci.yml)
 
 A C++ library for pricing financial options. Planned models: Black–Scholes (analytic),
-Monte Carlo and binomial tree. The current version contains a placeholder function
-that is used to set up the build, tests, benchmarks and documentation.
+Monte Carlo and binomial tree. Currently implements call/put payoffs and the
+Black–Scholes formula for European options without dividends. The command-line
+application prints example call and put prices.
+
+The Black–Scholes API accepts a continuously compounded annual rate and annual
+volatility as decimals (`0.05` means 5%), and time to expiry in years. It supports
+zero time, zero volatility, zero spot/strike and negative rates. Invalid inputs
+throw `std::invalid_argument`; intermediate overflow throws `std::overflow_error`.
 
 **Documentation:** https://g30613740.github.io/option_pricer/
 

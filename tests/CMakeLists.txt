@@ -6,7 +6,7 @@ FetchContent_Declare(
 set(INSTALL_GTEST OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(unit_tests test_math.cpp test_payoff.cpp)
+add_executable(unit_tests test_math.cpp test_payoff.cpp test_black_scholes.cpp)
 target_link_libraries(unit_tests PRIVATE option_pricer GTest::gtest_main)
 
 include(GoogleTest)
