@@ -49,9 +49,18 @@ doxygen docs/Doxyfile                            # documentation
   for a reminder. Create local commits autonomously under the global rules.
   Before pushing, show the changes and obtain permission; an explicit request
   to push counts as permission.
+- Enable the local commit message check with
+  `git config --local core.hooksPath .githooks` when setting up this repository.
+  Python 3 is required. The check rejects Cyrillic text, prohibited tool
+  references, and co-author trailers; English meaning still needs review.
+- Before every final response, check the requested outcome against applicable
+  global and project rules. Complete all authorized, feasible work. For each
+  unresolved blocker, give a concrete next action and identify any permission
+  or access required; do not stop at describing the failure. Verify commit
+  language, prohibited attribution, validation results, and push authorization.
 - Before finishing a task: build the project and run all tests; they must pass.
 - Do not change CI/CD (`.github/workflows/`) or `docs/Doxyfile` without an explicit request.
 - Do not add new external dependencies without an explicit request.
 - Do not commit build artifacts (`build/`) or secrets.
-- Do not push to the remote repository; the owner pushes after review.
+- Push only after the owner authorizes the specific changes.
 - Keep changes minimal and focused on the task; do not refactor unrelated code.
