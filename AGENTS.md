@@ -40,6 +40,11 @@ doxygen docs/Doxyfile                            # documentation
 
 ## Rules
 
+- После завершённого и проверенного изменения сам предлагай пользователю
+  сохранить результат коммитом; не жди напоминания. Локальные коммиты создавай
+  самостоятельно согласно глобальным правилам. Перед отправкой в удалённый
+  репозиторий показывай изменения и получай разрешение; прямая просьба
+  пользователя сделать push является таким разрешением.
 - Before finishing a task: build the project and run all tests; they must pass.
 - Do not change CI/CD (`.github/workflows/`) or `docs/Doxyfile` without an explicit request.
 - Do not add new external dependencies without an explicit request.

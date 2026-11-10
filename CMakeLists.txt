@@ -15,7 +15,8 @@ option(OPTION_PRICER_BUILD_BENCH "Build benchmarks" ON)
 include(FetchContent)
 
 # Core library
-add_library(option_pricer src/math.cpp src/payoff.cpp src/black_scholes.cpp)
+add_library(option_pricer src/math.cpp src/payoff.cpp src/black_scholes.cpp
+                          src/monte_carlo.cpp)
 target_include_directories(option_pricer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_compile_options(option_pricer PRIVATE -Wall -Wextra -Wpedantic)
 
