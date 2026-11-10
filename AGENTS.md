@@ -40,11 +40,15 @@ doxygen docs/Doxyfile                            # documentation
 
 ## Rules
 
-- После завершённого и проверенного изменения сам предлагай пользователю
-  сохранить результат коммитом; не жди напоминания. Локальные коммиты создавай
-  самостоятельно согласно глобальным правилам. Перед отправкой в удалённый
-  репозиторий показывай изменения и получай разрешение; прямая просьба
-  пользователя сделать push является таким разрешением.
+- Use English for commit messages, pull request titles and descriptions,
+  documentation, code comments, and application output. This project rule
+  overrides the global preference for Russian commit messages. Conversation
+  with the owner remains in Russian. Do not mention AI tools or add
+  Co-Authored-By trailers in commits or public project materials.
+- Proactively offer to commit completed and verified changes; do not wait
+  for a reminder. Create local commits autonomously under the global rules.
+  Before pushing, show the changes and obtain permission; an explicit request
+  to push counts as permission.
 - Before finishing a task: build the project and run all tests; they must pass.
 - Do not change CI/CD (`.github/workflows/`) or `docs/Doxyfile` without an explicit request.
 - Do not add new external dependencies without an explicit request.
